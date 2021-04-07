@@ -30,5 +30,7 @@ $search = $conn->prepare("
 
 $search->execute();
 
+echo "<pre>";
 print_r($search->fetchAll());
+echo "</pre>";
 
